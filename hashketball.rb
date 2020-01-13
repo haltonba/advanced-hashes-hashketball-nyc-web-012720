@@ -125,7 +125,7 @@ def game_hash
   }
 end
 
-def num_points (player)
+def num_points_scored (player)
   hash = game_hash
   hash.each do |home_away, details|
     details[:players].each do |i|
