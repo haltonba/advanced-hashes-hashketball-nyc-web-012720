@@ -159,7 +159,7 @@ end
 def team_names
   hash = game_hash
   hash.each do |home_away, details|
-    
+    details.map {|x| }
   end
 end
 
