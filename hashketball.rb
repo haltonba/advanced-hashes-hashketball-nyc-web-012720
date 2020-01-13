@@ -127,8 +127,8 @@ end
 
 def num_points (player)
   hash = game_hash
-  hash.each do |home_away, players|
-    players.each do ||
+  hash.each do |home_away, details|
+    details.each do ||
     
     end
   end
