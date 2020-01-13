@@ -241,7 +241,7 @@ def player_with_longest_name
       names << i[:player_name]
     end
   end
-  names.max_by(&:length)
+  names.max_by {|x| x.length}
 end
 
 
