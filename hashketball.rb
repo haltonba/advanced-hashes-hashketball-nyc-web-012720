@@ -1,7 +1,13 @@
 def game_hash
   hash = {
-    home: {}
-    away: {}
+    home: {
+      team_name:,
+      colors:
+      
+    },
+    away: {
+      
+    }
   }
 end
 
