@@ -77,7 +77,7 @@ def game_hash
           slam_dunks: 2
         },
         {
-          player_name: "Reggie Evans",
+          player_name: "Bismack Biyombo",
           number: 30,
           shoe: 14,
           points: 12,
