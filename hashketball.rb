@@ -127,6 +127,7 @@ end
 
 def num_points (player)
   hash = game_hash
+  
 end
 
 
