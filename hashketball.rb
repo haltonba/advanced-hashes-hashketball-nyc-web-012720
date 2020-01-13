@@ -128,8 +128,8 @@ end
 def num_points (player)
   hash = game_hash
   hash.each do |home_away, details|
-    details[players].each do |i|
-      if player_name === player
+    details[:players].each do |i|
+      if i[:player_name] === player
         return i[:points] 
       end
     end
