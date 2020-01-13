@@ -88,7 +88,7 @@ def game_hash
           slam_dunks: 10
         },
         {
-          player_name: "Brook Lopez",
+          player_name: "DeSagna Diop",
           number: 11,
           shoe: 17,
           points: 17,
