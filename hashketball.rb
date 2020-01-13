@@ -181,7 +181,8 @@ def player_stats (player)
   hash.each do |home_away, details|
     details[:players].each do |i|
       if i[:player_name] === player
-        stats[:number] = i[]
+        stats[:number] = i[:number]
+        stats[:number] = i[:number]
       end
     end
   end
