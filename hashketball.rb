@@ -175,13 +175,9 @@ def player_numbers (team)
   end
 end
 
-def player_numbers (team)
+def player_stats (player)
   hash = game_hash
-  hash.each do |home_away, details|
-    if details[:team_name] == team
-      return details[:players].map {|x| x[:number]}
-    end
-  end
+  
 end
 
 
