@@ -148,7 +148,10 @@ def shoe_size (player)
 end
 
 def team_colors (team)
-  
+  hash = game_hash
+  hash.each do |home_away, details|
+    
+  end
 end
 
 
