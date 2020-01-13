@@ -126,8 +126,7 @@ def game_hash
 end
 
 def num_points_scored (player)
-  hash = game_hash
-  hash.each do |home_away, details|
+  game_hash.each do |home_away, details|
     details[:players].each do |i|
       if i[:player_name] === player
         return i[:points] 
@@ -137,8 +136,7 @@ def num_points_scored (player)
 end
 
 def shoe_size (player)
-  hash = game_hash
-  hash.each do |home_away, details|
+  game_hash.each do |home_away, details|
     details[:players].each do |i|
       if i[:player_name] === player
         return i[:shoe]
@@ -148,8 +146,7 @@ def shoe_size (player)
 end
 
 def team_colors (team)
-  hash = game_hash
-  hash.each do |home_away, details|
+  game_hash.each do |home_away, details|
     if details[:team_name] === team
       return details[:colors]
     end
@@ -157,9 +154,8 @@ def team_colors (team)
 end
 
 def team_names
-  hash = game_hash
   names = []
-  hash.each do |home_away, details|
+  game_hash.each do |home_away, details|
     name = details[:team_name]
     names << name
   end
@@ -167,8 +163,7 @@ def team_names
 end
 
 def player_numbers (team)
-  hash = game_hash
-  hash.each do |home_away, details|
+  game_hash.each do |home_away, details|
     if details[:team_name] == team
       return details[:players].map {|x| x[:number]}
     end
@@ -176,9 +171,8 @@ def player_numbers (team)
 end
 
 def player_stats (player)
-  hash = game_hash
   stats = {}
-  hash.each do |home_away, details|
+  game_hash.each do |home_away, details|
     details[:players].each do |i|
       if i[:player_name] === player
         stats[:number] = i[:number]
