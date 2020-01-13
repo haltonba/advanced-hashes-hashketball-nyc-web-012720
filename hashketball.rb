@@ -127,7 +127,9 @@ end
 
 def num_points (player)
   hash = game_hash
+  hash.each do ||
   
+  end
 end
 
 
