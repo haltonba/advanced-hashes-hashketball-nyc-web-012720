@@ -177,7 +177,9 @@ end
 
 def player_stats (player)
   hash = game_hash
-  
+  hash.each do |home_away, details|
+    
+  end
 end
 
 
