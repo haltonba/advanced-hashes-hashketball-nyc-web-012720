@@ -254,7 +254,7 @@ def long_name_steals_a_ton
   end
   most_steals = stats.max_by{|player, steals| steals}[0]
   if most_steals == player_with_longest_name
-    true
+    return true
   end
 end
 
