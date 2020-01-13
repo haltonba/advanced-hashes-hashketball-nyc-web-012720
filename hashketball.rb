@@ -42,9 +42,9 @@ def game_hash
           number: 1,
           shoe: 19,
           points: 26,
-          rebounds: ,
-          assists:,
-          steals:,
+          rebounds: 11,
+          assists: 6,
+          steals: 3,
           blocks:,
           slam_dunks:
         },
