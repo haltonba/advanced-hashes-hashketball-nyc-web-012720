@@ -158,9 +158,12 @@ end
 
 def team_names
   hash = game_hash
+  names = []
   hash.each do |home_away, details|
-    details.map {|x| x = home_away[:team_names]}
+    name = details[:team_name]
+    names << name
   end
+  names
 end
 
 
