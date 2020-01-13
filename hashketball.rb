@@ -166,6 +166,13 @@ def team_names
   names
 end
 
+def player_numbers (team)
+  hash = game_hash
+  hash.each do |home_away, details|
+    
+  end
+end
+
 
 
 
