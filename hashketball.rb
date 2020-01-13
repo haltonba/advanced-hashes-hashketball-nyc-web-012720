@@ -178,7 +178,9 @@ end
 def player_stats (player)
   hash = game_hash
   hash.each do |home_away, details|
-    
+    details[:players].each do ||
+      
+    end
   end
 end
 
