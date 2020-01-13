@@ -218,6 +218,10 @@ def most_points_scored
   stats.max_by{|player, shoe| shoe}[0]
 end
 
+def winning_team
+  
+end
+
 
 
 
