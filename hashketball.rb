@@ -200,7 +200,7 @@ def big_shoe_rebounds
   big_shoe = stats.max_by{|player, shoe| shoe}[0]
   game_hash.each do |home_away, details|
     details[:players].each do |i|
-      if i[:player_name] === big_shoe
+      if i[:player_name] == big_shoe
         return i[:rebounds]
       end
     end
