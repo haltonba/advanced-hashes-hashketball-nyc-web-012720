@@ -182,7 +182,10 @@ def player_stats (player)
     details[:players].each do |i|
       if i[:player_name] === player
         stats[:number] = i[:number]
-        stats[:number] = i[:number]
+        stats[:shoe] = i[:shoe]
+        stats[:points] = i[:points]
+        stats[:rebounds] = i[:rebounds]
+        
       end
     end
   end
