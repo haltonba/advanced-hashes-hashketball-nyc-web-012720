@@ -50,9 +50,9 @@ def game_hash
         },
         {
           player_name: "Jason Terry",
-          number:,
-          shoe:,
-          points:,
+          number: 31,
+          shoe: 15,
+          points: 19,
           rebounds:,
           assists:,
           steals:,
