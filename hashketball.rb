@@ -49,7 +49,7 @@ def game_hash
           slam_dunks: 5
         },
         {
-          player_name:,
+          player_name: "Jason Terry",
           number:,
           shoe:,
           points:,
