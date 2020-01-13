@@ -234,6 +234,16 @@ def winning_team
   end
 end
 
+def player_with_longest_name
+  names = []
+  game_hash.each do |home_away, details|
+    details[:players].each do |i|
+      names << i[:player_name]
+    end
+  end
+  stats.max_by{|player, shoe| shoe}[0]
+end
+
 
 
 
