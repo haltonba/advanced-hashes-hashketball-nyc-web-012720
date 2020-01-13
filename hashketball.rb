@@ -241,7 +241,7 @@ def player_with_longest_name
       names << i[:player_name]
     end
   end
-  stats.max_by{|player, shoe| shoe}[0]
+  
 end
 
 
