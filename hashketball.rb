@@ -244,6 +244,10 @@ def player_with_longest_name
   names.max_by {|x| x.length}
 end
 
+def long_name_steals_a_ton
+  
+end
+
 
 
 
