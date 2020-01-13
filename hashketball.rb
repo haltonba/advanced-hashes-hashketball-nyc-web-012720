@@ -185,7 +185,10 @@ def player_stats (player)
         stats[:shoe] = i[:shoe]
         stats[:points] = i[:points]
         stats[:rebounds] = i[:rebounds]
-        
+        stats[:assists] = i[:assists]
+        stats[:steals] = i[:steals]
+        stats[:blocks] = i[:blocks]
+        stats[:slam_dunks] = i[:slam_dunks]
       end
     end
   end
