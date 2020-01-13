@@ -178,8 +178,10 @@ end
 def player_stats (player)
   hash = game_hash
   hash.each do |home_away, details|
-    details[:players].each do ||
-      
+    details[:players].each do |i|
+      if i[:player_name] === player
+        
+      end
     end
   end
 end
