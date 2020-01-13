@@ -207,22 +207,15 @@ def big_shoe_rebounds
   end
 end
 
-def big_shoe_rebounds
+def most_points_scored
   stats = {}
   game_hash.each do |home_away, details|
     details[:players].each do |i|
       player = i[:player_name]
-      stats[player] = i[:shoe]
+      stats[player] = i[:points]
     end
   end
-  big_shoe = stats.max_by{|player, shoe| shoe}[0]
-  game_hash.each do |home_away, details|
-    details[:players].each do |i|
-      if i[:player_name] == big_shoe
-        return i[:rebounds]
-      end
-    end
-  end
+  stats.max_by{|player, shoe| shoe}[0]
 end
 
 
