@@ -38,7 +38,7 @@ def game_hash
           slam_dunks: 15
         },
         {
-          player_name:,
+          player_name: "Mason Plumlee",
           number:,
           shoe:,
           points:,
