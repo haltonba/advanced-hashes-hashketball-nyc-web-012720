@@ -227,6 +227,11 @@ def winning_team
   game_hash[:away][:players].each do |i|
     away_score += i[:points]
   end
+  if home_score > away_score
+  "Brooklyn Nets"
+  else 
+  "Charlotte Hornets"
+  end
 end
 
 
