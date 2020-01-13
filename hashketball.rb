@@ -169,7 +169,9 @@ end
 def player_numbers (team)
   hash = game_hash
   hash.each do |home_away, details|
-    
+    if details[:team_name] == team
+      
+    end
   end
 end
 
