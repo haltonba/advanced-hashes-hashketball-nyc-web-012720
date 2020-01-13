@@ -136,6 +136,11 @@ def num_points_scored (player)
   end
 end
 
+def shoe_size (player)
+  hash = game_hash
+  
+end
+
 
 
 
