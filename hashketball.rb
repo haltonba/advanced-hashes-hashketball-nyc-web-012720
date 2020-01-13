@@ -45,8 +45,8 @@ def game_hash
           rebounds: 11,
           assists: 6,
           steals: 3,
-          blocks:,
-          slam_dunks:
+          blocks: 8,
+          slam_dunks: 5
         },
         {
           player_name:,
