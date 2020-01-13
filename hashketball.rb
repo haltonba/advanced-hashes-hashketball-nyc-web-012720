@@ -215,7 +215,7 @@ def most_points_scored
       stats[player] = i[:points]
     end
   end
-  stats.max_by{|player, shoe| shoe}[0]
+  stats.max_by{|player, points| points}[0]
 end
 
 def winning_team
@@ -245,12 +245,18 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton
-  true
+  stats = {}
+  game_hash.each do |home_away, details|
+    details[:players].each do |i|
+      player = i[:player_name]
+      stats[player] = i[:steals]
+    end
+  end
+  most_steals = stats.max_by{|player, steals| steals}[0]
+  if most_steals == player_with_longest_name
+    true
+  end
 end
-
-
-
-
 
 
 
